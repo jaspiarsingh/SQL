@@ -1,0 +1,24 @@
+/* PROJECT: DESIGN A STORE DATABASE 
+REQUIREMENT: Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
+*/
+
+
+CREATE TABLE slicktops(id INTEGER PRIMARY KEY, category TEXT, gender TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO slicktops VALUES(1, "tank top", "F", 20, 200);
+INSERT INTO slicktops VALUES(2, "full sleeve shirt", "M", 40,20); 
+INSERT INTO slicktops VALUES(3, "tank top", "M", 15,50); 
+INSERT INTO slicktops VALUES(4, "plain t shirt", "F", 10,100); 
+INSERT INTO slicktops VALUES(5, "zip up jacket", "M", 50,15); 
+INSERT INTO slicktops VALUES(6, "hoodies", "M", 45,30); 
+INSERT INTO slicktops VALUES(7, "sport bras", "F", 20,20); 
+INSERT INTO slicktops VALUES(8, "graphic tees", "M", 15,50); 
+INSERT INTO slicktops VALUES(9, "graphic tees", "F", 20,40); 
+INSERT INTO slicktops VALUES(10, "full sleeve shirt", "F", 40,70); 
+INSERT INTO slicktops VALUES(11, "dri feet gym tees", "M", 25,100); 
+INSERT INTO slicktops VALUES(12, "dri feet gym tees", "F", 25,100); 
+INSERT INTO slicktops VALUES(13, "5 t-shirt pack white", "M", 60,20); 
+INSERT INTO slicktops VALUES(14, "sports jerseys", "M", 200, 40); 
+INSERT INTO slicktops VALUES(15, "sports jerseys", "F", 150, 50);
+
+SELECT category,SUM(quantity), AVG(price) FROM slicktops GROUP BY category;
