@@ -1,3 +1,5 @@
+#In this SQL, I am quering a customer and order database with multiple tables in order to quantify statistics between the customers and the orders. 
+
 --1. How many orders were placed in January? 
 SELECT COUNT(orderID) FROM BIT_DB.JanSales
 where length(orderid) = 6 
