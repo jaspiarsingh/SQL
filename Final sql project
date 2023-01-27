@@ -1,5 +1,7 @@
+#In this SQL project, I use a combination of different SQL commands from joining multiple tables to aggregating data from tables in order to answer questions about the data in the tables in the database.
 
-1.Show Customers (their full names, customer ID, and country) who are not in the US. (Hint: != or <> can be used to say "is not equal to").
+
+1.Show Customers (their full names, customer ID, and country) who are not in the US. 
 SELECT FirstName, Lastname, customerid, country FROM chinook.customers 
 WHERE country <> 'USA';
 
